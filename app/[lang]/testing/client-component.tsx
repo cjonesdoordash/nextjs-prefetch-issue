@@ -6,7 +6,9 @@ export default async function IndexPage() {
   return (
     <div>
       On client
-      <Link href={'/'}>TO INDEX</Link>
+      <Link href={'/'} prefetch={false}>
+        TO INDEX
+      </Link>
     </div>
   )
 }
