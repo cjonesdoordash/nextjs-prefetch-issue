@@ -1,19 +1,14 @@
-import { i18n } from '../../i18n-config'
-
-export async function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ lang: locale }))
-}
-
-export default function Root({
+export default async function Root({
   children,
-  params,
 }: {
   children: React.ReactNode
-  params: { lang: string }
 }) {
+  const data = await fetch('https://catfact.ninja/fact')
+  const json = await data.json()
   return (
-    <html lang={params.lang}>
-      <body>{children}</body>
-    </html>
+    <div>
+      <p>{json.fact}</p>
+      {children}
+    </div>
   )
 }
