@@ -1,6 +1,6 @@
 import ClientComponent from './client-component'
 
-export default async function IndexPage() {
+export default function IndexPage() {
   return (
     <div>
       <p>Hello testing page on server</p>

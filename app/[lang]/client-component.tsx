@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 
-export default async function IndexPage() {
+export default function IndexPage() {
   return (
     <div>
       On client
