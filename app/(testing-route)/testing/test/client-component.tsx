@@ -6,7 +6,9 @@ export default function IndexPage() {
   return (
     <div>
       On client
-      <Link href={'/testing'}>TO TESTING</Link>
+      <Link prefetch={false} href={'/testing'}>
+        TO TESTING
+      </Link>
     </div>
   )
 }

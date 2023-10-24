@@ -7,6 +7,7 @@ export default async function Root({
 }: {
   children: React.ReactNode
 }) {
+  console.log('rendering')
   const data = await fetch('https://catfact.ninja/fact')
   const json = await data.json()
   return (
