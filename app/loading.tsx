@@ -1,3 +1,3 @@
-export default function OuterLoading() {
+export default function InnerLoading() {
   return <div>Loading...</div>
 }
